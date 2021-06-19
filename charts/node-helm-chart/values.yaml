@@ -2,6 +2,22 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+# The most important part of the chart itself it’s defined in the global part of the values.yaml. 
+# Here, we tell our Chart where the application’s Docker image is (image.registry), 
+# the name of the application (projectName), and its version (image.tag).
+
+global:
+  # enabled is the master enabled switch. Setting this to true or false
+  # will enable or disable all the components within this chart by default.
+  enabled: true
+  # Used to define custom django.fullname in template.
+  projectName: ""
+  # image sets the repo,tag and pullPolicy of the project
+  image:
+    registry: ""
+    tag: latest
+    pullPolicy: Always
+
 replicaCount: 1
 
 image:
