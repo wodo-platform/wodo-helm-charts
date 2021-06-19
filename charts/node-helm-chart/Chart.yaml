@@ -1,6 +1,6 @@
 apiVersion: v2
 name: node-helm-chart
-description: A Helm chart for Kubernetes
+description: Generic Node Helm chart for wodo platform
 
 # A chart can be either an 'application' or a 'library' chart.
 #
