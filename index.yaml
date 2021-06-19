@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  node-helm-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-06-19T17:35:54.577161461Z"
+    description: A Helm chart for Kubernetes
+    digest: f19f7277528ae89cdb7d99fe205cfa8b688a93f1197569a51e24773153aa7ad3
+    name: node-helm-chart
+    type: application
+    urls:
+    - https://github.com/wodo-platform/wodo-helm-charts/releases/download/node-helm-chart-1.0.0/node-helm-chart-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-06-19T17:35:54.577166061Z"
