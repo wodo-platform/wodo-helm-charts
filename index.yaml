@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   node-helm-chart:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-06-19T18:06:46.514530836Z"
+    description: Generic Node Helm chart for wodo platform
+    digest: 7bb9dbc39db57c985eb4f059106d3a7e7d060d90ed245c48a2f4bedc7a34b40c
+    name: node-helm-chart
+    type: application
+    urls:
+    - https://github.com/wodo-platform/wodo-helm-charts/releases/download/node-helm-chart-1.0.2/node-helm-chart-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2021-06-19T17:52:19.497332487Z"
     description: Generic Node Helm chart for wodo platform
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/wodo-platform/wodo-helm-charts/releases/download/node-helm-chart-1.0.1/node-helm-chart-1.0.1.tgz
     version: 1.0.1
-generated: "2021-06-19T17:52:19.497350087Z"
+generated: "2021-06-19T18:06:46.514539836Z"
