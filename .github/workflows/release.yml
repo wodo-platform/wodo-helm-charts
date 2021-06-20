@@ -37,6 +37,7 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
   release-apps:
+    needs: release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
