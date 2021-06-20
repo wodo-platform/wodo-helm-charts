@@ -2,13 +2,24 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 1
+node-helm-chart:
+  global:
+    # enabled is the master enabled switch. Setting this to true or false
+    # will enable or disable all the components within this chart by default.
+    enabled: true
+    # Used to define custom django.fullname in template.
+    projectName: "wodo-gameserver-api"
+    # image sets the repo,tag and pullPolicy of the project
+    image:
+      repository: "ghcr.io/wodo-platform/wodo-gameserver-api"
+      tag: latest
+      pullPolicy: Always
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  repository: "ghcr.io/wodo-platform/wodo-gameserver-api"
+  tag: latest
+  pullPolicy: Always
+
 
 imagePullSecrets: []
 nameOverride: ""
