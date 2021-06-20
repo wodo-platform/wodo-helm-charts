@@ -20,12 +20,12 @@ node-helm-chart:
 
 image:
   repository: "ghcr.io/wodo-platform/wodo-payment-api"
-  tag: latest
+  tag: main
   pullPolicy: Always
 
 imagePullSecrets:
   - name: docker-auth
-  
+
 nameOverride: ""
 fullnameOverride: ""
 
