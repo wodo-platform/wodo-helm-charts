@@ -14,7 +14,7 @@ global:
   projectName: ""
   # image sets the repo,tag and pullPolicy of the project
   image:
-    registry: ""
+    repository: ""
     tag: latest
     pullPolicy: Always
 
