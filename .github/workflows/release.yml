@@ -26,7 +26,7 @@ jobs:
       
       - name: Helm Add Repo
         run: |
-          helm repo add  wodo-helm-charts https://wodo-platform.github.io/wodo-helm-charts
+          helm repo add  wodo-helm-charts https://wodo-platform.github.io/wodo-helm-charts --username $GITHUB_ACTOR --password ${{ secrets.GITHUB_TOKEN }}
           helm repo update
 
       - name: Run chart-releaser
