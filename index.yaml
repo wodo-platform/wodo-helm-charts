@@ -54,6 +54,20 @@ entries:
   wodo-payment-api:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2021-06-20T12:02:55.499580457Z"
+    dependencies:
+    - name: node-helm-chart
+      repository: https://wodo-platform.github.io/wodo-helm-charts/
+      version: 1.0.7
+    description: A Helm chart for Kubernetes
+    digest: a1a33c658ee65aede9529f41ec57a240588dcdfe220c8ce69bb3f21892078fc1
+    name: wodo-payment-api
+    type: application
+    urls:
+    - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wodo-payment-api-1.0.8/wodo-payment-api-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2021-06-20T09:45:51.767200634Z"
     dependencies:
     - name: node-helm-chart
@@ -66,4 +80,4 @@ entries:
     urls:
     - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wodo-payment-api-1.0.5/wodo-payment-api-1.0.5.tgz
     version: 1.0.5
-generated: "2021-06-20T11:57:11.193262698Z"
+generated: "2021-06-20T12:02:55.499616457Z"
