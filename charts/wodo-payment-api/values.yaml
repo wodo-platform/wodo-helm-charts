@@ -20,11 +20,10 @@ node-helm-chart:
 
 replicaCount: 1
 
-#image:
-  #repository: nginx
-  #pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  #tag: ""
+image:
+  registry: "ghcr.io/wodo-platform/wodo-payment-api"
+  tag: latest
+  pullPolicy: Always
 
 imagePullSecrets: []
 nameOverride: ""
