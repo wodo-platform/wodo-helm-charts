@@ -23,7 +23,9 @@ image:
   tag: latest
   pullPolicy: Always
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: docker-auth
+  
 nameOverride: ""
 fullnameOverride: ""
 
