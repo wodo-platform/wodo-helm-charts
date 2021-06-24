@@ -57,16 +57,17 @@ service:
   targetPort: 5000
 
 ingress:
-  enabled: false
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
   hosts:
-    - host: chart-example.local
+    - host: wodo.local
       paths:
       - path: /
         backend:
-          serviceName: chart-example.local
+          serviceName: {{ include "wodo-payment-api.fullname" . }}
           servicePort: 80
   tls: []
   #  - secretName: chart-example-tls
