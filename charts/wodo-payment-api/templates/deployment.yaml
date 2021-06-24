@@ -38,7 +38,7 @@ spec:
               value: "mysql://wodo-db:wodo123@10.96.202.31:3306/wodo-db"
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 3000
               protocol: TCP
           livenessProbe:
             httpGet:
