@@ -65,7 +65,7 @@ ingress:
   hosts:
     - host: wodo.local
       paths:
-      - path: /
+      - path: /wodo-payment-api(/|$)(.*)
         backend:
           serviceName: wodo-payment-api
           servicePort: 80
