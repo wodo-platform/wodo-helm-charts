@@ -60,11 +60,12 @@ ingress:
   enabled: true
   annotations:
     kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$1
   hosts:
     - host: wodo.local
       paths:
-      - path: /
+      - path: /wodo-payment-api(/|$)(.*)
         backend:
           serviceName: wodo-payment-api
           servicePort: 80
