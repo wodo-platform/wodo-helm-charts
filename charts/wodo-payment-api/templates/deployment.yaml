@@ -34,8 +34,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-          - name: DATABASE_URL
-            value: "mysql://wodo-db:wodo123@wodo.local:30006/wodo-db"
+          - name: {{ .Values.image.env.name }}
+            value: {{ .Values.image.env.value }}
           ports:
             - name: http
               containerPort: 3000
