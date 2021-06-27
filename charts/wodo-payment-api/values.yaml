@@ -26,7 +26,7 @@ image:
 containers:
   env:
     - name: "DATABASE_URL" 
-      value: "mysql://wodo-db:wodo123@wodo.local:30006/wodo-db" 
+      value: "mysql://wodo-db:wodo123@mysql-nodeport.mysql:3306/wodo-db" 
 
 imagePullSecrets:
   - name: docker-auth
