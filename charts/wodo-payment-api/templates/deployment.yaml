@@ -33,10 +33,9 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          {{- with .Values.image.env }}
           env:
-            {{- toYaml . | nindent 8 }}
-          {{- end }}
+          - name: DATABASE_URL
+            value: "mysql://wodo-db:wodo123@wodo.local:30006/wodo-db"
           ports:
             - name: http
               containerPort: 3000

@@ -22,9 +22,6 @@ image:
   repository: "ghcr.io/wodo-platform/wodo-payment-api"
   tag: main
   pullPolicy: Always
-  env:
-    - name: DATABASE_URL
-      value: "mysql://wodo-db:wodo123@wodo.local:30006/wodo-db"
 
 imagePullSecrets:
   - name: docker-auth
