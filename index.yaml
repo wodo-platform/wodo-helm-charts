@@ -685,4 +685,19 @@ entries:
     urls:
     - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wodo-payment-api-1.0.5/wodo-payment-api-1.0.5.tgz
     version: 1.0.5
-generated: "2021-06-27T10:35:32.008727275Z"
+  wp-nodejs-demo-service:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2021-10-10T23:00:56.120362257Z"
+    dependencies:
+    - name: node-helm-chart
+      repository: https://wodo-platform.github.io/wodo-helm-charts/
+      version: 1.0.13
+    description: A Helm chart for Kubernetes
+    digest: 7d0cc396bdd99aaf1f82572e5fd302d1527a6809bbebc3d585aae7dd00b0e6ed
+    name: wp-nodejs-demo-service
+    type: application
+    urls:
+    - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wp-nodejs-demo-service-1.0.0/wp-nodejs-demo-service-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-10-10T23:00:56.12060186Z"
