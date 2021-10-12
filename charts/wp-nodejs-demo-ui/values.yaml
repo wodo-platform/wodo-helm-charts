@@ -11,15 +11,15 @@ node-helm-chart:
     # will enable or disable all the components within this chart by default.
     enabled: true
     # Used to define custom django.fullname in template.
-    projectName: "wp-nodejs-demo-service"
+    projectName: "wp-nodejs-demo-ui"
     # image sets the repo,tag and pullPolicy of the project
     image:
-      repository: "ghcr.io/wodo-platform/wp-nodejs-demo-service"
+      repository: "ghcr.io/wodo-platform/wp-nodejs-demo-ui"
       tag: latest
       pullPolicy: Always
 
 image:
-  repository: "ghcr.io/wodo-platform/wp-nodejs-demo-service"
+  repository: "ghcr.io/wodo-platform/wp-nodejs-demo-ui"
   tag: main
   pullPolicy: Always
 
@@ -72,10 +72,10 @@ ingress:
   hosts:
     - host: local.dev.com
       paths:
-      - path: /demo/?(.*)
+      - path: /demoui/?(.*)
         pathType: Prefix
         backend:
-          serviceName: wp-nodejs-demo-service
+          serviceName: wp-nodejs-demo-ui
           servicePort: 80
   tls: []
   #  - secretName: chart-example-tls
