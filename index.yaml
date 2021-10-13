@@ -688,6 +688,20 @@ entries:
   wp-nodejs-demo-service:
   - apiVersion: v2
     appVersion: 1.1.0
+    created: "2021-10-13T14:33:42.58859781Z"
+    dependencies:
+    - name: node-helm-chart
+      repository: https://wodo-platform.github.io/wodo-helm-charts/
+      version: 1.0.13
+    description: A Helm chart for Kubernetes
+    digest: 8b6a3996471f00d29ea4637af55df13580f702d247d258c82db2474be988ddb7
+    name: wp-nodejs-demo-service
+    type: application
+    urls:
+    - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wp-nodejs-demo-service-1.0.1/wp-nodejs-demo-service-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.1.0
     created: "2021-10-10T23:00:56.120362257Z"
     dependencies:
     - name: node-helm-chart
@@ -700,4 +714,19 @@ entries:
     urls:
     - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wp-nodejs-demo-service-1.0.0/wp-nodejs-demo-service-1.0.0.tgz
     version: 1.0.0
-generated: "2021-10-10T23:00:56.12060186Z"
+  wp-nodejs-demo-ui:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2021-10-13T14:33:42.756478632Z"
+    dependencies:
+    - name: node-helm-chart
+      repository: https://wodo-platform.github.io/wodo-helm-charts/
+      version: 1.0.13
+    description: A Helm chart for Kubernetes
+    digest: acda3b836450864c9d058a57d64dbba7921d5a0a274b1597cd2bbaa37b8a257d
+    name: wp-nodejs-demo-ui
+    type: application
+    urls:
+    - https://github.com/wodo-platform/wodo-helm-charts/releases/download/wp-nodejs-demo-ui-1.0.0/wp-nodejs-demo-ui-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-10-13T14:33:42.757041438Z"
