@@ -2,8 +2,9 @@
   <a href="https://wodo.io/" target="blank"><img src="https://github.com/wodo-platform/wg-web-ui/blob/master/app/img/_src/branding/logo_purple.png" width="320" alt="Wodo Platform" /></a>
 </p>
 
-
+<div align="center">
 <h2> Wodo Helm Charts Repository</h2>
+</div>
 
 <div align="center">
   <h4>
